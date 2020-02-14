@@ -2,7 +2,7 @@
 ## Model serving: important for business but less focus from  academicians
 Machine Learning powers key customer facing recommendations as well as back-end decisions at most consumer internet and e-commerce companies. For the customer, in addition to the accuracy of predictions the latency is also critical. 
 
-**[A recent study at Akamai found that a 100 millisecond increase in latency leads to 7% reduction in conversion rates]** (https://www.akamai.com/uk/en/about/news/press/2017-press/akamai-releases-spring-2017-state-of-online-retail-performance-report.jsp)
+[A recent study at Akamai found that a 100 millisecond increase in latency leads to 7% reduction in conversion rates] (https://www.akamai.com/uk/en/about/news/press/2017-press/akamai-releases-spring-2017-state-of-online-retail-performance-report.jsp)
 
 Academicians, among whom the foremost are the 2018 Turing award winners have worked extensively on aspects like optimization, designing newer architectures etc. Their efforts have led to significant leaps in solving real world tasks like Image Classification and NLP tasks like machine translation. However, the academic community has largely overlooked the model deployment and serving aspects (sometimes also called inference).
 A notable exception is the RISELab at Berkeley and its predecessor the AMPLab which led to the hugely popular open source framework Spark.
