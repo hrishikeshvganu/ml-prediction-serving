@@ -4,15 +4,12 @@ Machine Learning powers key customer facing recommendations as well as back-end 
 
 [A recent study at Akamai found that a 100 millisecond increase in latency leads to 7% reduction in conversion rates](https://www.akamai.com/uk/en/about/news/press/2017-press/akamai-releases-spring-2017-state-of-online-retail-performance-report.jsp)
 
-Academicians have worked extensively on aspects like optimization, designing newer architectures etc. Their efforts have led to significant leaps in solving real world tasks like Image Classification and NLP tasks like machine translation. However, the academic community has largely overlooked the model serving aspects.
-A notable exception is the [RISELab](https://rise.cs.berkeley.edu/) at Berkeley and its predecessor the AMPLab which led to the hugely popular open source framework Spark.
-
+Academicians have worked extensively on aspects like optimization, designing newer architectures etc. Their efforts have led to significant leaps in solving real world tasks like Image Classification and NLP tasks like machine translation. However, the academic community has largely overlooked the model serving aspects. A notable exception is the [RISELab](https://rise.cs.berkeley.edu/) at Berkeley and its predecessor the AMPLab which led to the hugely popular open source framework Spark. Unlike model training, model serving is therefore a topic for which no textbooks are available. I will hence attempt to provide a practitioners' view of model serving and the challenges that we face in the real world.
 
 Inline-style: 
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 ## Challenges in deploying and serving predictions
-Unlike model training, model serving is therefore a topic for which no textbooks are available. I will hence attempt to provide a practitioners' view of model serving and the challenges that we face in the real world.
 ### 1. Python's GIL leads to inefficiencies even on single node deployments
 Most data scientists are comfortable with Python and like to deploy their trained models in a framework like flask which is a lightweight and popular framework for serving applications. A typical the setup consists of flask, gunicorn and a reverse proxy like nginx. While this setup supports concurrency, ML workloads are CPU bound.
 
