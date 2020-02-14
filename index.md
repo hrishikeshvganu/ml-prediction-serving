@@ -17,6 +17,7 @@ Unlike model training, model serving is therefore a topic for which no textbooks
 Most data scientists are comfortable with Python and like to deploy their trained models in a framework like flask which is a lightweight and popular framework for serving applications. A typical the setup consists of flask, gunicorn and a reverse proxy like nginx. While this setup supports concurrency, ML workloads are CPU bound.
 
 
+
 Constraints due to Python's GIL. Even in the simplest of architectures where one wishes to deploy the model on a single node, relying on the typical setup above forces use of multiple processes each having a copy of the model in memory. It's not unusual for a DL model to occupy 500–700 GB in memory. This strategy clearly is inefficient since there's no real need for multiple copies to be held in memory since the same serving pattern can be implemented using multithreading in a language like C++. (Astute readers would say "there are other patterns where the GIL can be released" and so on but I won't cover that in this article.)
 
 ![alt text]( ./images/Gunicorn-GIL.jpg "Logo Title Text 1")
