@@ -5,8 +5,8 @@ Machine Learning powers key customer facing recommendations as well as back-end 
 [A recent study at Akamai found that a 100 millisecond increase in latency leads to 7% reduction in conversion rates](https://www.akamai.com/uk/en/about/news/press/2017-press/akamai-releases-spring-2017-state-of-online-retail-performance-report.jsp)
 
 Academicians, among whom the foremost are the 2018 Turing award winners have worked extensively on aspects like optimization, designing newer architectures etc. Their efforts have led to significant leaps in solving real world tasks like Image Classification and NLP tasks like machine translation. However, the academic community has largely overlooked the model deployment and serving aspects (sometimes also called inference).
-A notable exception is the RISELab at Berkeley and its predecessor the AMPLab which led to the hugely popular open source framework Spark.
-https://rise.cs.berkeley.edu/
+A notable exception is the [RISELab](https://rise.cs.berkeley.edu/) at Berkeley and its predecessor the AMPLab which led to the hugely popular open source framework Spark.
+
 
 Inline-style: 
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
