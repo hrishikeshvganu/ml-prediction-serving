@@ -19,3 +19,4 @@ Constraints due to Python's GIL. Even in the simplest of architectures where on
 ![alt text]( ./images/Gunicorn-GIL.jpg "Logo Title Text 1")
 2. Awareness about the compute DAG induced by ML architectures
 This problem tends to happen in companies where bulk of the work is on converting existing off-the shelf popular models to prediction APIs. ML experts might not be part of the team and hence the ML model itself is treated like a black-box by the engineering team. Not being aware of the internal compute DAG of the model means that the team has little control over the latency of prediction.
+![alt text](./images/BERT-RNN-LM.png "Logo Title Text 1")
